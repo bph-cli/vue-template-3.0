@@ -6,7 +6,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "cz": "git cz"
+    "cz": "git cz",
+    "lint-staged": "lint-staged",
+    "commitlint" : "commitlint --config commitlint.config.js -e -V",
+    "prepare":"husky install"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -30,5 +33,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,md,json}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
