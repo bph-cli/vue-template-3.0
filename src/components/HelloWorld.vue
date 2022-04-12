@@ -33,6 +33,6 @@
 
 <style scoped>
   a {
-    color: #42b983;
+    color: #43b983;
   }
 </style>
