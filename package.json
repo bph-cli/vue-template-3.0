@@ -8,8 +8,8 @@
     "preview": "vite preview",
     "cz": "git cz",
     "lint-staged": "lint-staged",
-    "commitlint" : "commitlint --config commitlint.config.js -e -V",
-    "prepare":"husky install"
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -20,6 +20,7 @@
     "@vitejs/plugin-vue": "^2.3.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "^6.3.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
