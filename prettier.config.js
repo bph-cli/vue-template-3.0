@@ -12,6 +12,6 @@ module.exports = {
   insertPragma: false,
   requirePragma: false,
   proseWrap: 'never',
-  htmlWhitespaceSensitivity: 'strict',
-  endOfLine: 'auto'
+  htmlWhitespaceSensitivity: 'strict'
+  // endOfLine: 'auto'
 }
