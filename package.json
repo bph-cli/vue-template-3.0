@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "lint": "eslint src --fix --ext .js,.vue",
     "preview": "vite preview",
     "cz": "git cz",
     "lint-staged": "lint-staged",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
-    "prepare": "husky install",
-    "create-hook": "husky add .husky/pre-commit \"npm test\""
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.25"
