@@ -9,7 +9,8 @@
     "cz": "git cz",
     "lint-staged": "lint-staged",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "create-hook": "husky add .husky/pre-commit \"npm test\""
   },
   "dependencies": {
     "vue": "^3.2.25"
