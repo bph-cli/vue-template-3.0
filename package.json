@@ -13,7 +13,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "pinia": "^2.0.13",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
@@ -33,13 +35,14 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-customizable"
+      "path": "node_modules/cz-customizable"
     }
   },
   "lint-staged": {
     "src/**/*.{js,vue,md,json}": [
-      "eslint --fix",
-      "prettier --write"
+      "npm run lint",
+      "prettier --write",
+      "git add"
     ]
   }
 }
